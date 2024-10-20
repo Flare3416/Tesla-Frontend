@@ -81,6 +81,10 @@ header{
     color: black;
 }
 
+.mobile button{
+    display: none;
+}
+
 nav{
     margin-top: 5px;
     display: flex;
@@ -281,6 +285,27 @@ footer ul li {
     nav ul li{
         font-size: xx-small; 
         padding: 3px; 
+    }
+
+    nav svg{
+        left: 15px;
+        width: 30%;
+        position: absolute;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    .mobile button {
+        display: inline-block;
+        position: absolute;
+        top: 6.5%;
+        left: 500px;
+        background-color: rgb(225, 220, 220);
+        color: black;
+        z-index: 1000;
+        width: 70px;  /* Set a fixed width */
+        height: 30px; /* Set a fixed height */
+        font-size: 14px; /* Adjust font size */
     }
 
     .box1{
