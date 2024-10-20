@@ -1,0 +1,230 @@
+@font-face {
+    font-family: myfont;
+    src: url(Cyberpunk.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+.sale{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:monospace;
+    background-color:rgb(245, 245, 245);
+    font-size: 10px;
+}
+
+.sale span{
+    font-size: small;
+    position: relative;
+    left:  20px;
+    text-decoration: underline;
+}
+
+.sale span:hover{
+    text-decoration-thickness: 15%;
+    cursor: pointer;
+}
+nav{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: auto;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    column-gap: 10%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: small;
+}
+nav ul li{
+    font-size: x-small;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul li:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+nav svg{
+    position: absolute;
+    margin-top: 5px;
+    left: 70px;
+    width: 8%;
+}
+.container{
+    width: 100vw;
+    height: 94vh;
+    background-image: url("background-1.jpg");
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.box{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.box1{
+    position: relative;
+    margin-top: 30px;
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.box1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.buttons{
+    position: absolute; 
+    bottom: 3%;
+    left: 50%; 
+    transform: translateX(-50%); 
+    display: flex; 
+    column-gap: 15px; 
+    z-index: 10;
+}
+
+button{
+    background-color: #1F75FE;
+    border-radius: 5px;
+    font-size: small;
+    padding: 5px 50px;
+    color: white;
+    border: none;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.box1>span{
+    position: absolute;
+    z-index: 100;
+    top: 10%;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.box2{
+    width: 90vw;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+.can{
+    width: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    position: relative; 
+    margin-top: 30px; 
+    height: 450px; 
+    overflow: hidden; 
+    align-items: center; 
+}
+
+.can img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+    
+}
+
+.can>span{
+    position: absolute;
+    z-index: 100;
+    top: 10%;
+    font-size: xx-large;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.box2 button{
+    padding: 5px 20px;
+}
+
+footer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 9px;
+    width: 30vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto; 
+
+}
+
+footer ul{
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-weight: bold;
+    color: grey;
+    justify-content: center;
+}
+
+
+footer ul li {
+    white-space: nowrap; 
+}
