@@ -296,16 +296,18 @@ footer ul li {
     }
 
     .mobile button {
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         position: absolute;
         top: 6.5%;
-        left: 500px;
+        left: 85%;
         background-color: rgb(225, 220, 220);
         color: black;
         z-index: 1000;
-        width: 70px;  /* Set a fixed width */
-        height: 30px; /* Set a fixed height */
-        font-size: 14px; /* Adjust font size */
+        width: 12%;  
+        height: 3%; 
+        font-size: 14px; 
     }
 
     .box1{
